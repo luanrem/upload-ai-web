@@ -5,8 +5,8 @@ import { Textarea } from './components/ui/textarea'
 
 export function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <div className="px-6 py-3 flex items-center justify-between border-b">
+    <div className="flex min-h-screen flex-col p-2">
+      <div className="flex items-center justify-between border-b px-6 py-3">
         <h1 className="text-xl font-bold">Upload.ai</h1>
 
         <div className="flex items-center gap-3">
@@ -17,15 +17,15 @@ export function App() {
           <Separator orientation="vertical" className="h-6" />
 
           <Button variant="outline">
-            <Github className="w-4 h-4 mr-2" />
+            <Github className="mr-2 h-4 w-4" />
             Github
           </Button>
         </div>
       </div>
 
-      <main className="flex-1 p-6 flex gap-6">
-        <div className="flex flex-col flex-1 gap-4">
-          <div className="grid grid-rows-2 gap-4 flex-1">
+      <main className="flex flex-1 gap-6 p-6">
+        <div className="flex flex-1 flex-col gap-4">
+          <div className="grid flex-1 grid-rows-2 gap-4">
             <Textarea
               className="resize-none p-4 leading-relaxed"
               placeholder="Inclua o prompt para a IA..."
